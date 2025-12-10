@@ -5,10 +5,3 @@ spark = get_spark("first_spark_app")
 spark_data = spark.read.csv('temp.csv', header=True, inferSchema=True)
 
 spark_data.show()
-
-# do the pandas too 
-
-import pandas as pd
-
-data = pd.read_csv("temp.csv")
-print(data.head())
